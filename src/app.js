@@ -1,15 +1,11 @@
-let pronoun = ["the", "your", "our"];
-let adj = ["best", "funnier", "great"];
-let noun = ["site", "game", "script"];
-for (let p of pronoun) 
-{
-  let domain = "";
-    for (let a of adj) 
-    {
-        for (let n of noun) 
-        {
-        domain = p + a + n + ".com";
-        console.log(domain);
+let pronounArr = ["the", "your", "our"];
+let adjArr = ["best", "funnier", "great"];
+let nounArr = ["site", "game", "script"];
+
+for (let pronoun of pronounArr) {
+    for (let adj of adjArr) {
+        for (let noun of nounArr) {
+          console.log(pronoun + adj + noun + ".com");
         }
     }
 }
